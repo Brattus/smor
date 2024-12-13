@@ -24,9 +24,9 @@ export function IncidentCard({ incident }: IncidentCardProps) {
       </div>
       <div className="p-6">
         <div className="flex justify-between items-start mb-4">
-          <span className={`px-3 py-1 rounded-full text-sm font-medium ${severityColors[incident.severity]}`}>
-            {incident.severity}
-          </span>
+          <span className={`px-3 py-1 rounded-full text-sm font-medium ${severityColors[incident.severity as 'low' | 'medium' | 'high']}`}>
+    {incident.severity}
+</span>
         </div>
         <p className="text-gray-600 mb-4">{incident.description}</p>
         <time className="text-sm text-gray-500">
