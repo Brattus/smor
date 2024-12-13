@@ -17,14 +17,12 @@ export function IncidentCard({ incident }: IncidentCardProps) {
       <div className="relative h-48 w-full">
         <Image
           src={incident.imageUrl}
-          alt={incident.title}
           fill
           className="object-cover"
         />
       </div>
       <div className="p-6">
         <div className="flex justify-between items-start mb-4">
-          <h3 className="text-xl font-semibold">{incident.title}</h3>
           <span className={`px-3 py-1 rounded-full text-sm font-medium ${severityColors[incident.severity]}`}>
             {incident.severity}
           </span>
