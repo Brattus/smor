@@ -26,7 +26,6 @@ export function IncidentCard({ incident }: IncidentCardProps) {
         <div className="flex justify-between items-start mb-4">
         
         </div>
-        <p className="text-gray-600 mb-4">{incident.description}</p>
         <time className="text-sm text-gray-500">
           {new Date(incident.date).toLocaleDateString("en-US", {
             year: "numeric",
