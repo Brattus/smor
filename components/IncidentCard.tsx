@@ -17,6 +17,7 @@ export function IncidentCard({ incident }: IncidentCardProps) {
       <div className="relative h-48 w-full">
         <Image
           src={incident.imageUrl}
+          alt="image"
           fill
           className="object-cover"
         />
